@@ -1,0 +1,169 @@
+footer {
+    background-color: $footer-bg;
+    .container {
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            .squad-free {
+                position: relative;
+                top: -80px;
+                padding: 30px 20px 25px;
+                background-color: $white;
+                border-top: 5px solid $active-c;
+                max-width: 350px;
+                h3 {
+                    text-align: center;
+                    font-size: 25px;
+                    text-transform: capitalize;
+                    color: $title-c;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: $title-c;
+                    text-align: center;
+                    line-height: 1.6;
+                    span {
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    &.italic {
+                        font-style: italic;
+                    }
+                }
+                .social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: 30px;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $title-c;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        border: 1px solid $title-c;
+                        i {
+                            color: $white;
+                            font-size: 16px;
+                            transition: .3s;
+                        }
+                        &:hover {
+                            background-color: $white;
+                            i {
+                                color: $title-c
+                            }
+                        }
+                    }
+                }
+            }
+            .white-text {
+                &.ul-container {
+                    max-width: 180px;
+                }
+                h3 {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: $white;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        font-size: 14px;
+                        color: $white;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        letter-spacing: .5px;
+                        margin-bottom: 15px;
+                        cursor: pointer;
+                        transition: .3s;
+                        i {
+                            color: $title-light;
+                            font-size: 14px;
+                        }
+                        &:hover {
+                            color: $title-light;
+                        }
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    color: $white;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                &.our-news {
+                    max-width: 400px;
+                    form {
+                        display: flex;
+                        input {
+                            border-radius: 0;
+                        }
+                        #subsc-email {
+                            background-color: $white;
+                            padding: 10px 20px;
+                            border: 1px solid $white;
+                            flex: 1;
+                            caret-color: $active-c;
+                            &:focus {
+                                border-color: $active-c;
+                            }
+                        }
+                        #submit {
+                            display: block;
+                            width: fit-content;
+                            padding: 10px 30px;
+                            text-align: center;
+                            border: 1px solid $active-c;
+                            background-color: $active-c;
+                            color: $white;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $cyan;
+                                border-radius: $cyan;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+            padding: 30px 20px;
+            border-top: 1px solid $active-c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            p {
+                font-size: 15px;
+                color: $white;
+                font-weight: 500;
+                letter-spacing: .5px;
+                a {
+                    font-weight: 600;
+                    color: $active-c;
+                    font-size: 16px;
+                    &:hover {
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}

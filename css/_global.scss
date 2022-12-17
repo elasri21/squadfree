@@ -1,0 +1,65 @@
+/* start global rules*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $white;
+    font-family: $family;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+input, textarea {
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    transition: .3s;
+    border-radius: 2px;
+}
+.container {
+    @media (min-width: 768px) {
+        margin-left: 60px !important;
+        margin-right: 60px !important;
+    }
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.section {
+    @media (min-width: 768px) {
+        padding: 60px 50px;
+    }
+    padding: 60px 30px;
+}
+.go-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $active-c;
+    color: $white;
+    border-radius: 50%;
+    i {
+        font-size: 14px;
+    }
+    &:hover {
+        background-color: $cyan;
+    }
+}
+.hide {
+    display: "none";
+}
+/* end global rules*/ 
