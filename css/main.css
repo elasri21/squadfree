@@ -612,8 +612,9 @@ header .open i {
   color: #dee2e6;
 }
 .call .container a:hover {
+  border-color: #67b0d1;
   color: #fff;
-  border-color: #fff;
+  background-color: #67b0d1;
 }
 
 /* start call */
@@ -714,6 +715,9 @@ header .open i {
 .portfolio .container .images .image:hover .info {
   height: auto;
   opacity: 1;
+}
+.portfolio .container .images .image.hide {
+  display: none;
 }
 
 /* end portfolio */

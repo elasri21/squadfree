@@ -48,4 +48,30 @@ window.addEventListener("scroll", function () {
     if(window.scrollY > 150) {
         header.style.backgroundColor = "#67b0d1";
     }
-})
+});
+
+//portfolio
+const posts = Array.from(document.querySelectorAll(".portfolio .image"));
+const categoties = Array.from(document.querySelectorAll(".btns li"));
+
+categoties.forEach(category => {
+    category.addEventListener("click", function() {
+        for(let i = 0; i < categoties.length; i++) {
+            categoties[i].classList.remove("active");
+        }
+        posts.forEach(post => {
+            if(this.id == post.dataset.id && this.id != "all") {
+                post.classList.remove("hide");
+            } else if(this.id == "all") {
+                post.classList.remove("hide");
+            } else {
+                post.classList.add("hide");
+            }
+        });
+        this.classList.add("active");
+    });
+});
+
+
+
+

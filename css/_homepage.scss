@@ -353,8 +353,9 @@
             border-radius: 30px;
             color: $gray-300;
             &:hover {
+                border-color: $active-c;
                 color: $white;
-                border-color: $white;
+                background-color: $active-c;
             }
         }
     }
@@ -461,7 +462,9 @@
                         opacity: 1;
                     }
                 }
-
+                &.hide {
+                    display: none;
+                }
             }
         }
     }
